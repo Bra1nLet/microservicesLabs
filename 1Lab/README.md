@@ -9,7 +9,7 @@
 3. Розгорнути сервіси в середовищі *Kubernetes*.
 4. Реалізувати доступ до сервісів за допомогою *Ingress*.
 
-#1.
+# 1.
 Так як я використовую windows, я використав команду:
 
 ```shell
@@ -24,7 +24,7 @@ minikube start --driver=hyperv
 kubectl теж працює.
 ![image](https://user-images.githubusercontent.com/98806855/194111760-c1501e6e-99e3-49d5-9072-c40122401a04.png)
 
-#2. 
+# 2. 
 Сервіс я розробив на python, за допомогою фреймворку FastAPI.
 Сервіс дозволяє створювати списки вигляду: ["предмет", "ціна"], та дивитись, на них.
 
@@ -34,7 +34,7 @@ kubectl теж працює.
 
 Для того щоб контенерейзувати сервіс, я написав файл requirement.txt, з усіма библиотеками, які використовуються у проекті.
 Також я описав dockerfile, який розгортує сервіс.
-#3 
+# 3 
 Образ докер я створив за допомогою команди:
 ```shell
 docker build -t bra1let/somepy:0.1 -f Dokerfile .
@@ -45,7 +45,7 @@ docker build -t bra1let/somepy:0.1 -f Dokerfile .
 ![image](https://user-images.githubusercontent.com/98806855/194117340-c401f18f-f794-4fe3-aefc-6a6aaa83d2f6.png)
 ![image](https://user-images.githubusercontent.com/98806855/194117435-807dc3ab-1e17-48cd-9e03-7592a5f448dd.png)
 Сервіс працює за цим посиланням.
-#4 
+# 4 
 Після опису файлу ingress.yaml, я замінив у файлі service.yaml NodePort на ClusterIP, та скористався командами:
 ```shell
 kubectl delete -f .\k8s\serviceitem\
