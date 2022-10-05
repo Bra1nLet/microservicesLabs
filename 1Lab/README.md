@@ -66,3 +66,5 @@ kubectl apply -f .\k8s\serviceitem\
 
 Потрібно було змінити посилання у сервісі, але легше було скоротити посилання до '/', у файлі ingress.yaml.
 Сервіс вдалось розгорнути, та він працює корректно.
+
+![image](https://user-images.githubusercontent.com/98806855/194121045-e61ed87f-b9c2-40e9-be00-0454c413bad8.png)
