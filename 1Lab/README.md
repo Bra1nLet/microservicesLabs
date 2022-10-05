@@ -62,7 +62,7 @@ kubectl apply -f .\k8s\serviceitem\
 (minikube ip)/api/service
 Після цього я стикнувся з проблемою, побачивши таку сторінку:
 
-![image](https://user-images.githubusercontent.com/98806855/194118233-d9f828b5-198b-4f08-9348-815a5a32f518.png)
+![image](https://user-images.githubusercontent.com/98806855/194120619-1e88cdf2-2278-4251-8e71-2cdf9263d95b.png)
 
 Потрібно було змінити посилання у сервісі, але легше було скоротити посилання до '/', у файлі ingress.yaml.
-Сервіс вдалось розгорнути, та він працює.
+Сервіс вдалось розгорнути, та він працює корректно.
