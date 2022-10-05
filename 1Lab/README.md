@@ -42,8 +42,10 @@ docker build -t bra1let/somepy:0.1 -f Dokerfile .
 Після цього я описав deployment.yaml та service.yaml.
 Замість ClusterIP, використовував NodePort.
 За допомогою команди *minikube service list*, я дізнавася посилання на сервіс.
+
 ![image](https://user-images.githubusercontent.com/98806855/194117340-c401f18f-f794-4fe3-aefc-6a6aaa83d2f6.png)
 ![image](https://user-images.githubusercontent.com/98806855/194117435-807dc3ab-1e17-48cd-9e03-7592a5f448dd.png)
+
 Сервіс працює за цим посиланням.
 # 4 
 Після опису файлу ingress.yaml, я замінив у файлі service.yaml NodePort на ClusterIP, та скористався командами:
