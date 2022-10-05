@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vader-sentiment
+  labels:
+    app: vader-sentiment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vader-sentiment
+  template:
+    metadata:
+      labels:
+        app: vader-sentiment
+    spec:
+      containers:
+        - name: vader-sentiment
+          image: bra1let/somepy:0.1
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always

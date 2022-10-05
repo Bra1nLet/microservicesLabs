@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+    <link href="{{ url_for('static', path='stylesall.css') }}" rel="stylesheet">
+</head>
+<body>
+
+    {% if items %}
+        <h1>All items</h1>
+        {% for i in items %}
+            <div id="poleschedule">
+                product's name: {{items[i].name}} <br>
+                price: {{items[i].price}}
+                <a href="/get-item/{{i}}"> More details </a>
+            </div>
+            <br>
+        {% endfor %}
+    {% endif %}
+
+    {% if item %}
+         <h1>Items</h1>
+        <div id="poleschedule">
+            product's name: {{item.name}} <br>
+            price: {{item.price}}
+        </div>
+    {% endif %}
+    <a href="/create_items/ "> Create Item </a>
+</body>
+</html>

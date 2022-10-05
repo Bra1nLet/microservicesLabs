@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Item Details</title>
+    <link href="{{ url_for('static', path='styles.css') }}" rel="stylesheet">
+</head>
+<body>
+
+        <form method="post" id="container">
+            <div id="form">
+                <label>
+                    <h1> Item name </h1>
+                    <input type="text" name="item">
+
+                    <h1> Item price </h1>
+                    <input type="number" name="price">
+                </label>
+                <br>
+                <label>
+                    <br>
+                    <input type="submit" value="Create item" id="btn">
+                </label>
+            </div>
+        </form>
+
+
+            {% if item %}
+                <p> Item {{ item }} has been created successfully </p>
+            {% endif %}
+
+</body>
+</html>
