@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
         - name: django
-          image: bra1let/djangopp:v1.4
+          image: bra1let/django-applab2:v1.0
           command: ['python', 'manage.py', 'migrate']
       restartPolicy: Never
   backoffLimit: 5

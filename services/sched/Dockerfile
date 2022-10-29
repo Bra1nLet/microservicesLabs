@@ -15,3 +15,4 @@ EXPOSE 8000
 
 CMD python manage.py makemigrations appsch
 CMD python manage.py makemigrations
+CMD ["gunicorn", "--bind", ":8000", "--workers", "3", "Schedule.wsgi"]

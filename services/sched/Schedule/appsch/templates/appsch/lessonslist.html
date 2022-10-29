@@ -1,7 +1,6 @@
 {% extends "base_menu.html" %}
 {% block content %}
     <head>
-
         <style type="text/css">
             body {
                 background-color: #02060d;
@@ -10,6 +9,7 @@
                 text-align: center;
                 margin-top: 10%;
             }
+
             #statt {
 
                 background-color: #34b832; /* Цвет фона */
@@ -22,16 +22,28 @@
                 max-width: 20em;
                 max-height: 20em;
             }
+            #lesson {
+                padding-left: 3em;
+                alignment: center;
+                border-radius: 2em; /* Радиус скругления */
+            }
+            .Accept {
+                background-color: #448062;
+            }
+            .NotAccept {
+                background-color: #d35959;
+            }
         </style>
     </head>
     <body>
 
-        <form id="edit_profile" method="post" enctype="multipart/form-data">
+
            <h1 id="centr">Все занятия</h1>
             {% csrf_token %}
             {% if lessons %}
                 {% for lesson in lessons %}
-                    <div>
+                    {% if lesson.accepted == True %}
+                    <div id="lesson" class="Accept">
                         Ученик: {{ lesson.owner }}
                         <br>
                         Начало занятия:
@@ -40,12 +52,40 @@
                         Конец занятия:
                         {{ lesson.end_lesson }}
                         <br>
-                        Коментарий
+                        Коментарий:
                         <br>
                         {{ lesson.comment }}
+                        {% if lesson.instructor == myaccount %}
+                            <form id="form" method="get" action="{% url 'appsch:deletelesson' lesson.id %}">
+                                <button type="submit" name="Deny"> Отменить </button>
+                            </form>
+                          {% endif %}
                     </div>
+                    {% else %}
+                        <div id="lesson" class="NotAccept" >
+                        Ученик: {{ lesson.owner }}
+                        <br>
+                        Начало занятия:
+                        {{ lesson.start_lesson }}
+                        <br>
+                        Конец занятия:
+                        {{ lesson.end_lesson }}
+                        <br>
+                        Коментарий:
+                        <br>
+                        {{ lesson.comment }}
+                        <br>
+                          {% if lesson.instructor == myaccount %}
+                            <form id="form" method="get" action="{% url 'appsch:acceptlesson' lesson.id %}">
+                                <button id="btn" type="submit" name="Access"> Прийнять </button>
+                                <button id="btn" type="submit" name="Deny"> Отклонить </button>
+                            </form>
+                          {% endif %}
+                    </div>
+                    {% endif %}
+                        <br>
                 {% endfor %}
             {% endif %}
-        </form>
+
     </body>
 {% endblock %}

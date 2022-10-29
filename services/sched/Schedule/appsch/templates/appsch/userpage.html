@@ -44,9 +44,7 @@
 
             {% endif %}
             <div id="centr">
-                {% if userre.picture == null %}
-                    <img id="phot" src="{{  userre.picture.url }}"  >
-                {% endif %}
+            <img id="phot" src="{{  userre.picture.url }}"  >
             <h1> {{ userre.Last_name }} {{ userre.First_name }} </h1>
             </div>
             <p>{{ userre.About_me|linebreaks  }}</p>
@@ -80,8 +78,11 @@
                 <li> 14:30 </li>
             </ul>
         </div>
-        {% if userre.stat.status == "Инструктор"   %}
-            <button class="w-100 btn btn-lg btn-primary" type="submit" value="OK"> Назначить вождение </button>
+        {% if userre.stat.status == "инструктор"   %}
+            <form method="post">
+                  {% csrf_token %}
+                 <button class="w-100 btn btn-lg btn-primary" type="submit" value="OK"> Назначить вождение </button>
+            </form>>
         {% endif %}
        {% endfor %}
     </body>

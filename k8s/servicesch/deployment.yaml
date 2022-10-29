@@ -15,7 +15,7 @@ spec:
         app: django
     spec:
       containers:
-        - image: bra1let/djangopp:v1.4
+        - image: bra1let/django-applab2:v1.0
           name: django
           command: ["gunicorn", "--bind", ":8000", "--workers", "3", "Schedule.wsgi"]
           ports:

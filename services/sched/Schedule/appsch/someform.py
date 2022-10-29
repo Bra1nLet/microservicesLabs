@@ -1,12 +1,17 @@
 from django import forms
 from django.contrib.auth.models import User
-from .models import Userinfo
+from .models import Userinfo, LessonDate
 from django.contrib.auth.forms import UserCreationForm
 from django.forms import ModelForm, TextInput, EmailInput
 
 
-class UserinfoForm(forms.ModelForm):
+class LessonForm(forms.ModelForm):
+    class Meta:
+        model = LessonDate
+        fields = ['instructor', 'owner', 'start_lesson', 'end_lesson', 'comment']
 
+
+class UserinfoForm(forms.ModelForm):
     class Meta:
         model = Userinfo
         fields = ['First_name', 'Last_name', 'About_me', 'picture']

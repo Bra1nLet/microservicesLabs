@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="91e7e527-782c-4d5b-b889-3a8f24ceefab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../services/sched/Schedule/appsch/templates/appsch/acceptLesson.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../services/sched/Schedule/appsch/templates/appsch/deleteLesson.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../services/sched/Schedule/appsch/templates/appsch/determinelesson.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../services/sched/Schedule/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servicesch/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/servicesch/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servicesch/job-migration.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/servicesch/job-migration.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../services/sched/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/.idea/Schedule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../services/sched/Schedule/.idea/Schedule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../services/sched/Schedule/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/Schedule/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../services/sched/Schedule/Schedule/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/appsch/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../services/sched/Schedule/appsch/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/appsch/migrations/0002_auto_20221022_1447.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/appsch/migrations/0003_auto_20221022_1559.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/appsch/migrations/0004_alter_lessondate_id_alter_status_id_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/appsch/migrations/0005_auto_20221023_0301.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/appsch/someform.py" beforeDir="false" afterPath="$PROJECT_DIR$/../services/sched/Schedule/appsch/someform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/appsch/templates/appsch/lessonslist.html" beforeDir="false" afterPath="$PROJECT_DIR$/../services/sched/Schedule/appsch/templates/appsch/lessonslist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/appsch/templates/appsch/userpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../services/sched/Schedule/appsch/templates/appsch/userpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/appsch/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../services/sched/Schedule/appsch/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../services/sched/Schedule/appsch/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../services/sched/Schedule/appsch/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Goy3LqYRT382IvVn9JmeM9w0Fx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Я/MicroservicesLab2"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91e7e527-782c-4d5b-b889-3a8f24ceefab" name="Changes" comment="" />
+      <created>1667069030691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667069030691</updated>
+      <workItem from="1667069031871" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

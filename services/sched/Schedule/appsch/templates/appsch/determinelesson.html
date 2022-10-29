@@ -1,0 +1,50 @@
+{% extends "base_menu.html" %}
+{% block content %}
+<head>
+    <style type="text/css">
+        body {
+            background-color: #02060d;
+        }
+        #centr {
+            text-align: center;
+            margin-top: 10%;
+        }
+        #statt {
+
+            background-color: #34b832; /* Цвет фона */
+            border: 2px solid #fff; /* Белая рамка */
+            border-radius: 15px; /* Радиус скругления */
+            font-size: 1.5em;
+            height: 1em;
+        }
+        #phot {
+            max-width: 20em;
+            max-height: 20em;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="determine_lesson" method="post">
+       <h1 id="centr">Редактировать профиль</h1>
+        {% csrf_token %}
+          <div class="form-group">
+              <label for="inputDate">Введите дату начала занятия:</label>
+              <label>
+                  <input type="datetime-local" name="start_lesson" class="form-control">
+              </label><br>
+          </div>
+          <div class="form-group">
+              <label for="inputDate">Введите дату конца занятия:</label>
+              <label>
+                  <input type="datetime-local" name="end_lesson" class="form-control">
+              </label><br>
+          </div>
+           <div class="form-group">
+            <label for="InputComment">Комментарий</label>
+            <input type="text" class="form-control" id="InputComment" name="comment">
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" value="OK"> Назначить вождение </button>
+    </form>
+</body>
+{% endblock %}

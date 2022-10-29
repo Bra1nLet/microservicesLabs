@@ -11,4 +11,7 @@ urlpatterns = [
     path('Mypage', views.Mypage.as_view(), name='mypage'),
     path('Mypage/edit', views.UserPageEdit.as_view(), name='edit_profile'),
     path('lessons/', views.MyLessons.as_view(), name='mylessons'),
+    path('deletelesson/<int:idlesson>', views.acceptLesson.as_view(), name='deletelesson'),
+    path('acceptlesson/<int:idlesson>', views.acceptLesson.as_view(), name='acceptlesson'),
+
 ]
