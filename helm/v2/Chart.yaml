@@ -1,0 +1,10 @@
+apiVersion: v2
+type: application
+version: 0.1.0
+name: djangolab3
+appVersion: "0.2"
+description: "djangolab3"
+dependencies:
+  - name: postgresql
+    version: 10.16.2
+    repository: https://charts.bitnami.com/bitnami

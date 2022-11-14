@@ -1,0 +1,40 @@
+postgresql:
+  fullnameOverride: postgres
+  postgresqlDatabase: "demo"
+  postgresqlUsername: "demo"
+  postgresqlPassword: "demo"
+  persistence:
+    size: 1Gi
+    mountPath: /var/lib/postgresql/data
+
+configs:
+  POSTGRES_DB: demo
+  POSTGRES_HOST: postgres
+
+secrets:
+  POSTGRES_USER: "ZGVtbw=="
+  POSTGRES_PASSWORD: "ZGVtbw=="
+
+microservises:
+  django:
+    replicaCount: 1
+    migrations:
+      image:
+        known: django-lab3
+        name: bra1let/django-applab2
+        tag: v1.0
+        command: [ 'python', 'manage.py', 'migrate' ]
+      POSTGRESQL_URL: "postgres://demo:demo@postgres:5432/demo?sslmode=disable"
+      VERSION: "20211128095755"
+    image:
+      known: django-lab33
+      name: bra1let/django-applab2
+      tag: v1.0
+    service:
+      ports:
+      - name: http
+        containerPort: 8000
+        port: 80
+    ingress:
+      path: /
+      port: http
